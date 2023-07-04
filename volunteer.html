@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer formulaire</title>
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./artists.html">Artistes</a></li>
+          </ul>
+        </nav>
+      </header>
+    <section id="volunteer" class="volunteer-section">
+        <h2>Inscription pour le bénévolat</h2>
+        <form action="traitement.php" method="POST">
+          <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="disponibilite">Disponibilité :</label>
+            <textarea id="disponibilite" name="disponibilite" required></textarea>
+          </div>
+      
+          <div class="form-group">
+            <input type="submit" value="Envoyer">
+          </div>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; 2023 Festival de Musique en Plein Air. Tous droits réservés. <br> | DEVELOPPE PAR AMAL HRA |</p>
+      </footer>
+         
+      
+</body>
+</html>

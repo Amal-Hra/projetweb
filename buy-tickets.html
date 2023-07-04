@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation de billet</title>
+    <link rel="stylesheet" href="./Css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./artists.html">Artistes</a></li>
+          </ul>
+        </nav>
+      </header>
+    <section id="reservation" class="reservation-section">
+        <h2>Réservation de billets</h2>
+        <form action="traitement.php" method="POST">
+          <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="nombre_billets">Nombre de billets :</label>
+            <input type="number" id="nombre_billets" name="nombre_billets" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="type_billet">Type de billet :</label>
+            <select id="type_billet" name="type_billet">
+              <option value="normal">Normal</option>
+              <option value="vip">VIP</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="options_supplementaires">Options supplémentaires :</label>
+            <input type="checkbox" id="repas" name="options_supplementaires" value="repas">
+            <label for="repas">Repas</label>
+            
+            <input type="checkbox" id="transport" name="options_supplementaires" value="transport">
+            <label for="transport">Transport</label>
+          </div>
+          
+          <div class="form-group">
+            <label for="commentaires">Commentaires :</label>
+            <textarea id="commentaires" name="commentaires"></textarea>
+          </div>
+          
+          <input type="submit" value="Réserver">
+        </form>
+      </section>
+      <footer class="footer">
+        <p>&copy; 2023 Festival de Musique en Plein Air. Tous droits réservés. <br> | DEVELOPPE PAR AMAL HRA |</p>
+      </footer>
+         
+</body>
+</html>

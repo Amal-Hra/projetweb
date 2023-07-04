@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abonnemnt au courriel</title>
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./artists.html">Artistes</a></li>
+          </ul>
+        </nav>
+      </header>
+    <section id="newsletter" class="newsletter-section">
+        <h2>Abonnement aux courriels</h2>
+        <form action="traitement.php" method="POST">
+          <div class="form-group">
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+            <small>Exemple : votrenom@example.com</small>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="S'abonner">
+          </div>
+        </form>
+      </section>
+      <footer class="footer">
+        <p>&copy; 2023 Festival de Musique en Plein Air. Tous droits réservés.<br> | DEVELOPPE PAR AMAL HRA |</p>
+      </footer>
+      
+</body>
+</html>

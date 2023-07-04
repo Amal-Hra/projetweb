@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artistes - Festival de Musique en Plein Air</title>
+  <link rel="stylesheet" href="./Css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="./index.html">Accueil</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section class="artistes-section">
+      <h1>Artistes Participants</h1>
+
+      <div class="artiste">
+        <img src="./img/coldplay.jpeg" alt="Artiste 1">
+        <h2>Cold Play</h2>
+        <p>Biographie de Cold Play</p>
+        <p>Coldplay est un groupe britannique de pop-rock formé en 1996. Composé de Chris Martin (chant, piano), Jonny Buckland (guitare), Guy Berryman (basse) et Will Champion (batterie), le groupe s'est rapidement fait connaître pour ses mélodies accrocheuses, ses paroles introspectives et ses performances énergiques sur scène. Leur musique est souvent décrite comme émotionnelle, poétique et inspirante, touchant un large public à travers le monde. Coldplay a sorti plusieurs albums à succès, dont "Parachutes", "A Rush of Blood to the Head" et "Viva la Vida or Death and All His Friends", leur permettant de devenir l'un des groupes les plus populaires de leur génération. Ils ont également remporté de nombreux prix et ont laissé une empreinte durable dans l'industrie musicale avec leur style unique et leur engagement envers des causes humanitaires.</p>
+      </div>
+
+      <div class="artiste">
+        <img src="./img/dualipa.jpg" alt="Artiste 2">
+        <h2>Dua Lipa</h2>
+        <p>Biographie de Dua Lipa</p>
+        <p>Dua Lipa est une chanteuse, compositrice et mannequin britannique d'origine albanaise. Née en 1995 à Londres, elle a connu une ascension fulgurante dans l'industrie de la musique. Son style musical mêle pop, dance et musique électronique, avec des influences de R&B et de soul. Dua Lipa s'est fait connaître avec des singles à succès tels que "New Rules", "IDGAF" et "Don't Start Now", qui ont propulsé sa carrière internationale. Son timbre de voix unique et sa présence scénique captivante lui ont valu de nombreux prix et nominations. En plus de sa carrière musicale, Dua Lipa est également reconnue pour son engagement en faveur des droits des femmes et de la communauté LGBTQ+. Elle est devenue une icône de la pop moderne, inspirant des millions de fans à travers le monde avec son talent, sa confiance et son style audacieux.</p>
+      </div>
+
+      <div class="artiste">
+        <img src="./img/rihanna.jpeg" alt="Artiste 3">
+        <h2>Rihanna</h2>
+        <p>Biographie de Rihanna</p>
+        <p>Rihanna est une chanteuse, compositrice, actrice et femme d'affaires barbadienne. Née en 1988 à la Barbade, elle a rapidement fait sensation dans l'industrie musicale avec son style unique mêlant pop, R&B, reggae et dancehall. Elle a connu de nombreux succès mondiaux tels que "Umbrella", "Diamonds" et "Work". Rihanna a reçu de nombreux prix et distinctions, dont neuf Grammy Awards, et est devenue l'une des artistes musicales les plus vendues de tous les temps. En plus de sa carrière musicale, elle s'est également diversifiée en tant que femme d'affaires, lançant sa propre ligne de cosmétiques, de lingerie et de mode. Rihanna est également engagée dans des causes humanitaires et est une voix puissante pour la justice sociale. Sa personnalité charismatique, son style avant-gardiste et son talent indéniable ont fait d'elle une icône mondiale de la musique et de la mode.</p>
+      </div>
+
+
+    </section>
+
+    <section class="horaires-section">
+      <h2>Horaires des Performances</h2>
+      <table>
+        <tr>
+          <th>Artiste</th>
+          <th>Scène</th>
+          <th>Heure</th>
+        </tr>
+        <tr>
+          <td>Cold Play</td>
+          <td>Scène 1</td>
+          <td>14h00 - 15h30</td>
+        </tr>
+        <td>Dua Lipa</td>
+          <td>Scène 1</td>
+          <td>16:00 - 17h30</td>
+        </tr>
+        <td>Rihanna</td>
+          <td>Scène 1</td>
+          <td>18h00 - 19h30</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="contact-section">
+      <h2>Demandes Spéciales</h2>
+      <form action="traitement.php" method="POST">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="demande">Demande spéciale :</label>
+        <textarea id="demande" name="demande" required></textarea>
+        
+        <input type="submit" value="Envoyer">
+      </form>
+    </section>
+
+    <section class="galerie-section">
+      <h2>Galerie de Photos</h2>
+      <div class="galerie">
+        <img src="./img/coldplay-2.jpeg" alt="Photo 1">
+        <img src="./img/dualipa-stage.jpeg" alt="Photo 2">
+        <img src="./img/rihanna2.jpeg" alt="Photo 3">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2023 Festival de Musique en Plein Air. Tous droits réservés.<br> | DEVELOPPE PAR AMAL HRA |</p>
+  </footer>
+</body>
+</html>

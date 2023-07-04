@@ -1,0 +1,487 @@
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+  }
+  
+  /* En-tête */
+  .header {
+    background-color:rgb(40, 2, 61) ;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  h1{
+    text-align: center;
+    font-size: 3em;
+  }
+  
+  .nav-links {
+    font-size: large;
+    margin:0;
+    padding:0;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .nav-links li a {
+    color: #FFF;
+    text-decoration:underline;
+  }
+  .gras{
+    text-decoration: underline solid rgb(40, 2, 61);
+  }
+  
+  /* Sections principales */
+  .main-section {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .banner img {
+    max-width: 100%;
+    height: auto;
+  
+  }
+  
+  .event-info h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .event-info p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Sections secondaires */
+  .secondary-section {
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .forms {
+    margin-bottom: 20px;
+   
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #7756a0;
+    color: #FFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #FFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em auto;
+    max-width: 700px;
+  }
+  
+  .image-gallery img {
+    margin: 8px;
+    width: 13em;
+    height: 13em;
+    object-fit: cover;
+  }
+  
+  /* Pied de page */
+  .footer {
+    background-color: #400e7d;
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+  }
+
+
+ /* Mise en page pour les écrans de téléphone */
+@media (max-width: 600px) {
+  /* ... Autres règles existantes ... */
+
+  .forms {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .forms a.button {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////  */
+.reservation-section {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.reservation-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.reservation-section form {
+  margin-top: 20px;
+}
+
+.reservation-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reservation-section input[type="text"],
+.reservation-section input[type="email"],
+.reservation-section input[type="number"] {
+  width: 100%;
+  max-width: 300px; /* Largeur maximale des champs de saisie */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
+}
+
+
+.reservation-section input[type="submit"] {
+  background-color: #45a049;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reservation-section input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*///////////////////////////////////////////////////////////////////////*
+
+/* Styles pour le formulaire d'inscription */
+#volunteer {
+  margin-top: 20px;
+}
+
+#volunteer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  max-width: 300px; /* Largeur maximale des champs de saisie */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+#volunteer {
+  margin-top: 20px;
+}
+
+#volunteer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  margin-left: 20px; /* Ajout de la marge à gauche */
+}
+h2{
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+/*/////////////////////////////////////////////////////////////////////////*/
+
+.newsletter-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-section h2 {
+  font-size: 24px;
+  color: #333;
+  
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+small {
+  color: #777;
+  font-size: 12px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #23527c;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles de la section des artistes */
+.artistes-section {
+  padding: 20px 0;
+}
+
+.artiste {
+  margin-bottom: 40px;
+}
+
+.artiste img {
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em auto;
+    max-width: 700px;
+}
+
+.artiste h2 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.artiste p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* Ratio 16:9 pour la vidéo */
+  height: 0;
+  overflow: hidden;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.reseaux-sociaux {
+  margin-top: 10px;
+}
+
+.reseaux-sociaux a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #337ab7;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.reseaux-sociaux a:hover {
+  color: #23527c;
+}
+
+
+/* Styles de la section des horaires */
+.horaires-section {
+  padding: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Styles de la section des demandes spéciales */
+.contact-section {
+  padding: 20px 0;
+}
+
+form {
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  max-width: 300px; /* Largeur maximale des champs de saisie */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
+}
+
+input[type="submit"] {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #23527c;
+}
+
+/* Styles de la section de la galerie de photos */
+.galerie-section {
+  padding: 20px 0;
+}
+
+.galerie img {
+    margin: 14px;
+    width: 13em;
+    height: 13em;
+    object-fit: cover;
+   display: flex;
+   flex-direction: row;
+    justify-content: center;
+    
+    margin-top: 20px;
+  }
+  
+  .image-gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px;
+  }
+    
+  
+
+
+/* Styles du footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Media queries pour la mise en page responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .artiste img {
+    max-width: 80%;
+  }
+}
+
+
+
+
+
+
+
